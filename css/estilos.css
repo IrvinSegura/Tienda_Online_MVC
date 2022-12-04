@@ -1,0 +1,328 @@
+a{
+	text-decoration: none;
+	color: #FFF;
+	font: 20px Arial, Helvetica, sans-serif;
+}
+
+nav ul{
+
+	list-style: none;
+}
+
+body{
+	font: 17px Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color:blanchedalmond;
+}
+
+/* Estilos globales */
+.contenedor{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+
+	float: right;
+	margin-top: 20px;
+}
+
+.contenedor1{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.boton1{
+    width: 170px;
+	height: 20px;
+	background: #000;
+	border: 0;
+	color: #fff;
+}
+
+/* Encabezado */
+
+header{
+	background-color: blanchedalmond;
+	padding-top: 30px;
+	min-height: 70px;
+	/*border-bottom: 5px solid #FFF;*/
+}
+
+#cabecera .contenedor li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+
+.realtado, .actual a{
+	color: #1293d4;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #FF0080;
+	font-weight: bold;
+}
+
+/*Slider*/
+
+.slider{
+	padding: 15px;
+	width: 90%;
+	margin:auto;
+	overflow: hidden;
+
+
+	border-radius: 80px 80px 80px 80px;
+}
+
+.slider ul{
+	display: flex;
+	width: 400%;
+	padding: 0;
+
+	animation: cambio 10s infinite;
+}
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+	width: 100%;
+	height: 400px;
+}
+
+@keyframes cambio{
+	0%{margin-left:  0%}
+	24%{margin-left: 0%}
+
+	25%{margin-left: -100%}
+	49%{margin-left: -100%}
+
+	50%{margin-left: -200%}
+	74%{margin-left: -200%}
+
+	75%{margin-left: -300%}
+	100%{margin-left: -300%}
+}
+
+#cabecera{
+	min-height: 60px;
+	background-position: center;
+	background-color: #FF0080;
+}
+
+
+/* Cajas */
+
+#cajas{
+	margin-top: 10px;
+	
+}
+
+#cajas .caja{
+	float: left;
+	width: 30%;
+	padding: 5px;
+	height: 230px;
+}
+
+#cajas .caja img{
+	width: 170px;
+}
+
+/* Cajas Productos */
+
+#cajas1{
+	margin-top: 10px;
+    color: #1293d4; 
+	
+}
+
+#cajas1 .caja1{
+	float: left;
+	width: 30%;
+	padding: 5px;
+	height: 270px;
+}
+
+#cajas1 .caja1 img{
+	width: 170px;
+    height: 170px;
+}
+
+
+
+/*Lateral*/
+
+aside#lateral{
+	float: left;
+	width: 30%;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+.oscuro{
+	padding: 10px;
+	background-color: #D8D8D8;
+	color: #FFF;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 2px;
+	margin-right: 10px;
+}
+
+
+/*Lateral1*/
+
+aside#lateral1{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+.oscuro1{
+	padding: 10px;
+	background-color: #000;
+	color: #FFF;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 2px;
+	margin-right: 10px;
+}
+
+/* Main-col */
+
+article #main-col{
+	float: right;
+	width: 68%;
+}
+
+article #main-col1{
+	float: right;
+	width: 68%;
+}
+
+
+/* Pie de pagina*/
+
+/*footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #01DF01;
+	text-align: center;
+}*/
+
+/* Eventos */
+
+ul#servicios li{
+	list-style: none;
+	padding: 20px;
+	border: 1px solid #ccc;
+	margin-bottom: 5px;
+	background-color: #e6e6e6;
+}
+
+/*Formulario Contacto*/
+
+input, textarea{
+	width: 100%;
+	height: 35px;
+	border: 1px solid gray;
+	margin-bottom: 5px;
+}
+
+textarea{
+	height: 120px;
+}
+
+input[type="submit"]{
+	background-color: #e8491d;
+	color: #fff;
+}
+
+/* Media Queries Hacer el sitio responsive*/
+
+@media(max-width: 1000px){
+	header #marca, 
+	header nav,
+	header nav li,
+	#cajas .caja,
+	article#main-col,
+	aside#lateral{
+		float: none;
+		text-align: center;
+		width: 100%
+	}
+
+	header{
+		padding-bottom: 20px;
+	}
+
+
+	input, textarea{
+		width: 98%;
+	}
+
+
+}
+@media(max-width: 380px){
+	img{
+    height: 120px;
+    max-width: 100%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
